@@ -3,10 +3,10 @@ import EditIcon from '../../../../../Icons/EditIcon';
 import RemoveIcon from '../../../../../Icons/RemoveIcon';
 import IconOnlyButton from '../../../../../Components/IconOnlyButton.js';
 
-const Option = styled.div`
-    outline: none;
-    color: #666787;
-`;
+ const Option = styled.div`
+//     outline: none;
+//     color: #666787;
+ `;
 
 function ListElement(props) {
     return (

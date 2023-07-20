@@ -10,14 +10,13 @@ const AddressesWrapped = styled.div`
     padding: 24px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 `;
 
 function Addresses() {
     return (
-        <AddressesWrapped className='d-inline-flex flex-column gap-2'>
-            <div className='d-inline-flex flex-column gap-3'>
-                <h2 className='text-rg'>Адреса заведений</h2>
+        <AddressesWrapped className='d-inline-flex flex-column justify-content-between'>
+            <div className='d-inline-flex flex-column'>
+                <div className='title mb-3'>Адреса заведений</div>
                     <ListElement>Санкт-Петербург, Невский пр-т. 28</ListElement>
                     <ListElement>Санкт-Петербург, Казанская ул, 7</ListElement>
             </div>

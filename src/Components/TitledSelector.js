@@ -12,19 +12,17 @@ const Select = styled.select`
     background-color: #F8FAFC;
     color: #666787;
     font: #F8FAFC;
-    &:hover {
-        background-color: #D9E2EFB8;
     }
 `;
 
 function TitledSelector({title, options}) {
     const Title = title === undefined ? 
         (<div></div>) : 
-        (<div>{title}</div>);
+        (<div className='caption'>{title}</div>);
     return (
         <div className='d-flex flex-column gap-2'>
             {Title}
-            <Select className='p-2'>
+            <Select className='px-3 py-2'>
                 {options.map(optionName => {
                     return (
                         <option key={optionName}>{optionName}</option>
